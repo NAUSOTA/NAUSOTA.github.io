@@ -8,21 +8,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <style>
-header
+#menu
 {
-    background-color:#193856;
-}
-
-body
-{
-  background-color:#4FB0B6;
+  color:#193856;
 }
 
 footer
 {
   background-color:#193856;
 }
-#myBar
+#cards
 {
   background-color:#193856;
 }
@@ -41,78 +36,64 @@ footer
 </nav>
 
 <!-- Header -->
-<header class="w3-container w3-padding" id="myHeader">
-  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+<header class="w3-container w3-padding w3-white" id="myHeader">
+  <i onclick="w3_open()" id="menu" class="fa fa-bars w3-xlarge w3-button"></i> 
   <div class="w3-center w3-text-white">
-  <h4>Northern Arizona University</h4>
-  <h1 class="w3-xxxlarge w3-animate-bottom">Student Occupational Therapy Association</h1>
+  <img src="SOTA.png" alt="NAU SOTA" class="w3-center">
     <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Donate</button>
+      <button class="w3-btn w3-xlarge w3-teal w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Donate</button>
   </div>
 </header>
 
 <div class="w3-row-padding w3-center w3-margin-top">
 <div class="w3-third">
-  <div class="w3-card w3-container w3-white" style="min-height:460px">
-  <h3>Calendar</h3><br><br><br><br>
-  <i class="fa fa-calendar w3-margin-bottom" style="font-size:120px"></i>
+  <div class="w3-card w3-container" id="cards">
+  <h3 class="w3-text-white">Calendar</h3>
+  <i class="fa fa-calendar w3-margin-bottom" style="font-size:120px;color:white;"></i>
   </div>
 </div>
 
 <div class="w3-third">
-  <div class="w3-card w3-container w3-white" style="min-height:460px">
-  <h3>spOTlight</h3><br>
-  <i class="fa fa-book w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
-  <p>Standard CSS only</p>
-  <p>Easy to learn</p>
-  <p>No need for jQuery</p>
-  <p>No JavaScript library</p>
+  <div class="w3-card w3-container" id="cards">
+  <h3 class="w3-text-white">spOTlight</h3>
+  <i class="fa fa-lightbulb-o w3-margin-bottom" style="font-size:120px;color:white;"></i>
   </div>
 </div>
 
 <div class="w3-third">
-  <div class="w3-card w3-container w3-white" style="min-height:460px">
-  <h3>Contact Us</h3>
-  <i class="fa fa-envelope w3-margin-bottom" style="font-size:120px"></i>
-  <p>SOTA.Office@nau.edu</p>
-  <p>SOTA.Fundraising@nau.edu</p>
-  <p>SOTA.Outreach@nau.edu</p>
-  <p>SOTA.Social@nau.edu</p><br>
-  <p>435 N 5th St<br>Phoenix, AZ 85004</p>
+  <div class="w3-card w3-container" id="cards">
+  <h3 class="w3-text-white">Contact Us</h3>
+  <i class="fa fa-envelope w3-margin-bottom" style="font-size:120px;color:white;"></i>
   </div>
 </div>
 </div>
 
-
+<br>
 
 <div class="w3-container w3-margin">
 
-<div class="w3-white w3-card w3-padding">
-  <h2 class="w3-center">Help Support SOTA Fundraising</h2>
-  <h3 w3-center>Guatemala Healing Hands</h3>
-  <div id="myBar" class="w3-center w3-padding w3-text-white" style="width:40%">40%</div>
-  <div class="w3-padding-32">
+<div class="w3-card w3-padding" id="cards">
+  <h2 class="w3-center w3-text-white">Help Support SOTA Fundraising</h2>
+  <h3 class="w3-text-white">Guatemala Healing Hands</h3>
+  <div class="w3-border w3-white">
+  <div id="myBar" class="w3-center w3-padding w3-text-white w3-teal" style="width:80%">80%</div>
+</div>
+  <div class="w3-padding-32 w3-center">
       <button class="w3-btn w3-dark-grey w3-hover-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Donate</button>
   </div>
-  <h3 w3-center>Therapists Without Borders</h3>
-  <div id="myBar" class="w3-center w3-padding w3-text-white" style="width:5%">5%</div>
-  <div class="w3-padding-32">
+  <h3 class="w3-text-white">Therapists Without Borders</h3>
+  <div class="w3-border w3-white">
+  <div id="myBar" class="w3-center w3-padding w3-text-white w3-teal" style="width:5%">5%</div>
+</div>
+  <div class="w3-padding-32 w3-center">
       <button class="w3-btn w3-dark-grey w3-hover-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Donate</button>
   </div>
 </div><br>
 </div>
 <hr>
 
-<h2 class="w3-center">Slideshows</h2>
-<div class="w3-content" style="max-width:800px;position:relative">
-
-<img class="mySlides w3-animate-opacity" src="/w3images/snow.jpg" style="width:100%">
-<img class="mySlides w3-animate-opacity" src="/w3images/lights.jpg" style="width:100%">
-<img class="mySlides w3-animate-opacity" src="/w3images/mountains.jpg" style="width:100%">
-<img class="mySlides w3-animate-opacity" src="/w3images/forest.jpg" style="width:100%">
-
-<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">❮</a>
-<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">❯</a>
+<h2 class="w3-center">A special thanks to our annual sponsors!</h2>
+<br>
 </div>
 
 <!-- Footer -->
